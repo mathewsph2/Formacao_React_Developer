@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="470" viewBox="0 0 420 470">
+  <defs>
+    <path id="star" d="M0,-17 L4.1,-5.7 L16.2,-5.3 L6.7,2.2 L10,13.8 L0,7 L-10,13.8 L-6.7,2.2 L-16.2,-5.3 L-4.1,-5.7 Z"/>
+    <path id="reactArc" d="M80 250 Q210 210 340 250" fill="none"/>
+    <path id="ribbonArc" d="M88 294 Q210 324 332 294" fill="none"/>
+  </defs>
+
+  <!-- escudo: borda ciano, corpo navy, filete interno -->
+  <path d="M64 68 H356 V240 C356 335 302 398 210 452 C118 398 64 335 64 240 Z" fill="#35c3f2"/>
+  <path d="M73 77 H347 V238 C347 326 296 388 210 440 C124 388 73 326 73 238 Z" fill="#171a2e"/>
+  <path d="M81 85 H339 V236 C339 318 290 378 210 428 C130 378 81 318 81 236 Z" fill="none" stroke="#35c3f2" stroke-width="2.5"/>
+
+  <!-- flancos claros da parte de baixo -->
+  <path d="M116 315 Q210 345 304 315 C300 365 262 402 210 432 C158 402 120 365 116 315 Z" fill="#e8f3fa" stroke="#10131f" stroke-width="3"/>
+
+  <!-- emblema: anel pontilhado, círculo navy e átomo -->
+  <circle cx="210" cy="368" r="54" fill="none" stroke="#35c3f2" stroke-width="10" stroke-dasharray="0.5 14" stroke-linecap="round"/>
+  <circle cx="210" cy="368" r="46" fill="#171a2e" stroke="#35c3f2" stroke-width="3"/>
+  <g fill="none" stroke="#4fd8ff" stroke-width="4">
+    <ellipse cx="210" cy="368" rx="32" ry="12.5"/>
+    <ellipse cx="210" cy="368" rx="32" ry="12.5" transform="rotate(60 210 368)"/>
+    <ellipse cx="210" cy="368" rx="32" ry="12.5" transform="rotate(120 210 368)"/>
+  </g>
+  <circle cx="210" cy="368" r="6.5" fill="#4fd8ff"/>
+  <circle cx="242" cy="368" r="4" fill="#4fd8ff"/>
+  <circle cx="194" cy="395.7" r="4" fill="#4fd8ff"/>
+  <circle cx="194" cy="340.3" r="4" fill="#4fd8ff"/>
+
+  <!-- estrelas do topo -->
+  <g fill="#eafaff">
+    <use href="#star" transform="translate(210 120)"/>
+    <use href="#star" transform="translate(163 128) scale(0.65)"/>
+    <use href="#star" transform="translate(257 128) scale(0.65)"/>
+    <path d="M128 135 L133 140 L128 145 L123 140 Z"/>
+    <path d="M292 135 L297 140 L292 145 L287 140 Z"/>
+  </g>
+
+  <!-- REACT arqueado -->
+  <text font-family="Arial Black, Arial, sans-serif" font-size="66" font-weight="900" fill="#ffffff"
+        stroke="#10131f" stroke-width="10" stroke-linejoin="round" paint-order="stroke" letter-spacing="1">
+    <textPath href="#reactArc" startOffset="50%" text-anchor="middle">REACT</textPath>
+  </text>
+
+  <!-- faixa DEVELOPER -->
+  <path d="M38 272 L92 262 V308 L38 318 L56 295 Z" fill="#1b8ec4" stroke="#10131f" stroke-width="3"/>
+  <path d="M382 272 L328 262 V308 L382 318 L364 295 Z" fill="#1b8ec4" stroke="#10131f" stroke-width="3"/>
+  <path d="M88 262 Q210 292 332 262 L332 306 Q210 336 88 306 Z" fill="#35c3f2" stroke="#10131f" stroke-width="3"/>
+  <text font-family="Arial, sans-serif" font-size="26" font-weight="800" fill="#0e2233" letter-spacing="5">
+    <textPath href="#ribbonArc" startOffset="50%" text-anchor="middle">DEVELOPER</textPath>
+  </text>
+</svg>
